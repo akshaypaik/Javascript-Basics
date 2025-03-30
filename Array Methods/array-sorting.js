@@ -1,8 +1,9 @@
 //Strings
 const owners = ['Krishnadas', 'Akshay', 'Radhe', 'Kavitha'];
-//mutates the original array
-console.log(owners.sort());
-console.log(owners);
+
+console.log(owners.sort()); // [IMPORTANT] mutates the original array -> [ 'Akshay', 'Kavitha', 'Krishnadas', 'Radhe' ]
+
+console.log(owners);    // [ 'Akshay', 'Kavitha', 'Krishnadas', 'Radhe' ]
 
 // Numbers
 const deposits = [200, 150, -250, 485, 640, 852, -412, 350];

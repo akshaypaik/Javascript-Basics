@@ -3,7 +3,7 @@ console.log([1,2,3,4,5,6,7,8]);
 
 // generate array programatically
 // empty arrays + fill method
-const arr = new Array(7);   // 7 empty length array
+const arr = new Array(7);   // 7 empty length array -> [ <7 empty items> ]
 console.log("arr: ", arr);
 
 arr.fill(1);

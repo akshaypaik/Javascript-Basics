@@ -1,11 +1,12 @@
 const numbers = [2, 5, 3];
 
-const sum = numbers.reduce((total, numbers) => {
-    return total = total + numbers;
+// total is a new variable initialized with 0 and number is each element we loop through numbers
+const sum = numbers.reduce((total, number) => {
+    return total = total + number;
 }, 0);
 
-console.log("numbers: ", numbers);
-console.log("total sum: ", sum);
+console.log("numbers: ", numbers);  // [2, 5, 3]
+console.log("total sum: ", sum);    // 10
 
 
 // **************************************************************************************************************
@@ -25,5 +26,5 @@ const sums = bankTransactions.reduce((acc, sum) => {
     sum > 0 ? acc.deposits = acc.deposits + sum : acc.withdrawals += sum;
     return acc;
 }, { deposits: 0, withdrawals: 0 });
-console.log(`Amount of deposits is ${sums.deposits} and withdrawals is ${sums.withdrawals}`);
+console.log(`Amount of deposits is ${sums.deposits} and withdrawals is ${sums.withdrawals}`);   //Amount of deposits is 9840 and withdrawals is -2060
 
