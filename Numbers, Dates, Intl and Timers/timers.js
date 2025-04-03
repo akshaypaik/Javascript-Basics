@@ -1,4 +1,4 @@
-// JS registers this callback function and continues with the code execution
+// JS registers these callback functions and continues with the code execution
 
 // const ingredients = ["olives", "spinach"];
 const ingredients = ["olives", "mushrooms"];
