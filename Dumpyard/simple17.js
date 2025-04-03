@@ -1,9 +1,36 @@
-// Two ways to create arrays dynamically 
-// 1. from method
-// 2. Array().keys() method
+const arr = [
+    {
+        name: "akshay",
+        city: "bangalore"
+    },
+    {
+        name: "radhe",
+        city: "bangalore"
+    },
+    {
+        name: "abc",
+        city: "delhi"
+    },
+    {
+        name: "def",
+        city: "mumbai"
+    }
+];
 
-const arr = Array.from({ length: 20 }, (_, index) => index);
-console.log(arr);   // [0,  1,  2,  3,  4,  5,  6, 7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+const filteredArr = arr.filter((item) => item.city === "bangalore");
+console.log("filteredArr: ", filteredArr);
 
-const arr2 = [...Array(20).keys()].map((item, index) => index + 1);
-console.log(arr2);  // [1,  2,  3,  4,  5,  6,  7, 8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+Array.prototype.myFilter = function (callback) {
+    let resArr = [];
+
+    for (let i = 0; i < this.length; i++) {
+        if (callback(this[i], i, this)) {
+            resArr.push(this[i]);
+        }
+    }
+
+    return resArr;
+}
+
+const myFilteredArr = arr.myFilter((item) => item.city === "bangalore");
+console.log("myFilteredArr: ", myFilteredArr);
