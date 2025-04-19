@@ -1,0 +1,15 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "javascript mastery",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-live-server": "live-server --port=8080 --entry-file='./index.html'"
+  },
+  "author": "akshay pai",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
